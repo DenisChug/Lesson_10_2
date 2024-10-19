@@ -1,4 +1,3 @@
-import time
 from threading import Thread
 from time import sleep
 class Knight(Thread):
@@ -13,7 +12,7 @@ class Knight(Thread):
     def run(self):
         print(f'{self.name}, на нас напали!')
         while self.power > 0:
-            time.sleep(1)
+            sleep(1)
             self.days += 1
             self.power -= 1
             self.army -= 1
