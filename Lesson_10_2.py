@@ -16,8 +16,7 @@ class Knight(Thread):
             self.days += 1
             self.power -= 1
             self.army -= 1
-            print(f"{self.name} сражается {self.days} день(дня), осталось {self.army}"
-                  f"воинов, против {self.power} в армии врага")
+            print(f"{self.name} сражается {self.days} день(дня), осталось {self.army} воинов, против {self.power} в армии врага")
             if self.army < 0:
                 print(f"{self.name} Проиграл спустя {self.days} дней(дня)!")
                 break
